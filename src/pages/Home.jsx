@@ -1,6 +1,6 @@
 
 export const home = () => {
-    return <div>
+    return <div className="min-h-screens">
         {/* Theme Toogle */}
 
 
@@ -9,6 +9,8 @@ export const home = () => {
 
         {/* Navbar */}
 
-        
+        {/* Main Content */}
+
+        {/* Footer */}
     </div>
 }
