@@ -1,8 +1,10 @@
+import { ThemeToggle } from "../components/ThemeToggle";
 
-export const home = () => {
-    return <div className="min-h-screens">
-        {/* Theme Toogle */}
-
+export const Home = () => {
+    return(
+     <div className="min-h-screens bg-background text-foreground overflow-x-hidden">
+        {/* Theme Toggle */}
+            <ThemeToggle />
 
 
         {/* Background Effects */}
@@ -13,4 +15,5 @@ export const home = () => {
 
         {/* Footer */}
     </div>
-}
+    );
+};
