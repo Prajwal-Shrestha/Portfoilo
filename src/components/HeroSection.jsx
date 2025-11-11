@@ -8,7 +8,7 @@ export const HeroSection = () => {
             className="relative min-h-screen flex flex-col items-center justify-center px-4"
         >
             {/* Profile Image */}
-            <div className="w-43 h-43 md:w-53 md:h-53 lg:w-63 lg:h-63 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 mb-8 flex items-center justify-center">
+            <div className="w-43 h-43 md:w-53 md:h-53 lg:w-63 lg:h-63 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-8 flex items-center justify-center">
                 <img
                     src={Pic}
                     alt="User"
