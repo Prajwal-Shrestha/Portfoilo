@@ -45,7 +45,7 @@ export const Education = () => {
     <section id="education" className="py-12">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-glow">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 ">
             Education
           </h2>
           <div className="w-20 h-1 mx-auto rounded-full bg-primary transition-colors duration-300" />
