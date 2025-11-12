@@ -23,7 +23,7 @@ const education = [
     location: "Kumaripati, laltipur",
     period: "2023 - 2025",
     logo: united,
-    gpa: "3.35/4.0",
+    gpa: "3.35",
   },
   {
     degree: "SEE",
