@@ -2,17 +2,19 @@ import { Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      setIsDarkMode(true);
+
+    // Default to dark if nothing is stored
+    if (storedTheme === "dark" || !storedTheme) {
       document.documentElement.classList.add("dark");
-    } else {
       localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+    } else {
+      document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
     }
   }, []);
@@ -36,7 +38,6 @@ export const ThemeToggle = () => {
         "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
         "focus:outlin-hidden"
       )}
-      // className={`${cn}fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300 focus:outline-hidden `}
     >
       {isDarkMode ? (
         <Sun className="h-6 w-6 text-yellow-300" />
@@ -46,4 +47,5 @@ export const ThemeToggle = () => {
     </button>
   );
 };
+
 export default ThemeToggle;
