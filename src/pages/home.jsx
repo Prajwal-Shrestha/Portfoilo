@@ -13,6 +13,7 @@ import { Education } from "../components/Education";
 import { SkillsSection } from "../components/SkillsSection";
 import Projects from "../components/Projects";
 import { ContactSection } from "../components/ContactSection";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
   const [showIntro, setShowIntro] = useState(true);
@@ -37,7 +38,8 @@ export const Home = () => {
         <Projects />
         <ContactSection />
       </main>
-      {/* Footer (if any) */}
+      {/* Footer  */}
+      <Footer />
     </div>
   );
 };
