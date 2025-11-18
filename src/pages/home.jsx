@@ -6,7 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import Intro from "../components/Intro"; // adjust path if needed
 import { ThemeToggle } from "../components/ThemeToggle";
 import { Navbar } from "../components/Navbar";
-import { StarBackground } from "../components/starbackground";
+import StarBackground from "../components/StarBackground"; 
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { Education } from "../components/Education";
